@@ -13,7 +13,7 @@ Live app: https://fudgegrass.github.io/Castle/
 
 ## One-time setup
 
-1. **Make the repo public** (GitHub Pages is free for public repos): Settings > General > Danger Zone > Change visibility.
+1. **Keep the repo private with GitHub Pro** (Pages on a private repo needs Pro): https://github.com/settings/billing > upgrade to Pro.
 2. **Turn on Pages**: Settings > Pages > Build and deployment > Source: **GitHub Actions**.
 3. **Create a Google sign-in client** at https://console.cloud.google.com:
    1. Create a project called Castle.
