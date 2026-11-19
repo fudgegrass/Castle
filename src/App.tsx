@@ -74,7 +74,7 @@ export default function App() {
       <header className="top">
         <div>
           <p className="eyebrow">{dayFmt.format(now)}</p>
-          <h1>{greeting(now)}, Thomas</h1>
+          <h1>{greeting(now)}</h1>
         </div>
         {state.kind === 'ready' && (
           <button className="link" onClick={disconnect}>

@@ -1,4 +1,4 @@
-// Thomas's 9-line rotating roster, taken from "Roster_Calculator Gateshead" (9-Line Roster sheet).
+// The 9-line rotating roster (from the roster calculator spreadsheet, "9-Line Roster" sheet).
 //
 // How it works:
 // - A roster runs for 9 weeks. Every week starts on a Saturday.
