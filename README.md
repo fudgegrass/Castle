@@ -1,6 +1,6 @@
 # Castle
 
-Thomas's personal assistant: calendar, email triage, drafted replies and a gym plan, as an app for phone, PC and Mac.
+A personal assistant: calendar, email triage, drafted replies and a gym plan, as an app for phone, PC and Mac.
 
 Live app: https://fudgegrass.github.io/Castle/
 
