@@ -15,16 +15,8 @@ Live app: https://fudgegrass.github.io/Castle/
 
 1. **Keep the repo private with GitHub Pro** (Pages on a private repo needs Pro): https://github.com/settings/billing > upgrade to Pro.
 2. **Turn on Pages**: Settings > Pages > Build and deployment > Source: **GitHub Actions**.
-3. **Create a Google sign-in client** at https://console.cloud.google.com:
-   1. Create a project called Castle.
-   2. APIs & Services > Library: enable **Google Calendar API**.
-   3. Google Auth Platform > Branding: app name Castle, your email as support and developer contact.
-   4. Audience: user type **External**, then add your own Gmail address under **Test users**.
-   5. Data Access: add the scope `.../auth/calendar.readonly`.
-   6. Clients > Create client: type **Web application**, Authorized JavaScript origins `https://fudgegrass.github.io` (and `http://localhost:5173` for local testing). No redirect URI is needed.
-   7. Copy the **Client ID** (ends in `.apps.googleusercontent.com`).
-4. **Give the client ID to GitHub**: Settings > Secrets and variables > Actions > Variables > New repository variable, name `GOOGLE_CLIENT_ID`, value = the client ID.
-5. Re-run the "Publish Castle" workflow from the Actions tab, then open the live app.
+3. **Google sign-in** is already set up (Google Cloud project "My Project 61901", OAuth client "Castle web app", your account as the only test user). The client ID is in `src/google.ts`.
+4. Merge the pull request. The "Publish Castle" workflow runs and the app goes live.
 
 ## Install it
 

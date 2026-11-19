@@ -14,7 +14,10 @@ declare global {
   }
 }
 
-export const clientId: string | undefined = import.meta.env.VITE_GOOGLE_CLIENT_ID;
+// A Google OAuth client ID is public by design (it is sent to every browser); it is not a secret.
+// Only test users added in Google Cloud can sign in with it.
+const DEFAULT_CLIENT_ID = '408913322138-e2sp4v8cvge22cr5qkh865dcsad8gu8m.apps.googleusercontent.com';
+export const clientId: string | undefined = import.meta.env.VITE_GOOGLE_CLIENT_ID || DEFAULT_CLIENT_ID;
 
 // The token is kept on this device only and ignored once it expires.
 function readStored(): StoredToken | null {
